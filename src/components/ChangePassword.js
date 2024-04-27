@@ -58,7 +58,7 @@ export default function ChangePassword() {
       const hasMinLength = changepassdata.newpassword.length >= 8;
       const hasUppercase = /[A-Z]/.test(changepassdata.newpassword);
       const hasLowercase = /[a-z]/.test(changepassdata.newpassword);
-      const hasSymbol = /[!@#$%^&*()_+\-=\[\]{};':",./<>?|\\]/.test(changepassdata.newpassword);
+      const hasSymbol = /[!@#$%^&*()_+\-=[\]{};':",./<>?|\\]/.test(changepassdata.newpassword);
       const hasDigit = /\d/.test(changepassdata.newpassword);
       const hasConfirm = changepassdata.newpassword === confirm;
 

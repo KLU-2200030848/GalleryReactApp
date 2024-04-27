@@ -67,7 +67,7 @@ const Payment = () => {
         try {
 
           const response = await axios.post(`${config.url}/placeorder`,{...order,artwork:art,user:customer});
-
+          setOrder('')
           if(response.status === 200)
           {
             return;

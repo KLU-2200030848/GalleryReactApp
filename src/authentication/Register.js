@@ -40,7 +40,7 @@ export default function Register()
       const hasMinLength = registrationData.password.length >= 8;
       const hasUppercase = /[A-Z]/.test(registrationData.password);
       const hasLowercase = /[a-z]/.test(registrationData.password);
-      const hasSymbol = /[!@#$%^&*()_+\-=\[\]{};':",./<>?|\\]/.test(registrationData.password);
+      const hasSymbol = /[!@#$%^&*()_+\-=[\]{};':",./<>?|\\]/.test(registrationData.password);
       const hasDigit = /\d/.test(registrationData.password);
       const hasConfirm = registrationData.password === confirm;
 

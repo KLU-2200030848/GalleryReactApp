@@ -40,7 +40,7 @@ export default function ArtistRegister() {
       const hasMinLength = artistregistrationdata.password.length >= 8;
       const hasUppercase = /[A-Z]/.test(artistregistrationdata.password);
       const hasLowercase = /[a-z]/.test(artistregistrationdata.password);
-      const hasSymbol = /[!@#$%^&*()_+\-=\[\]{};':",./<>?|\\]/.test(artistregistrationdata.password);
+      const hasSymbol = /[!@#$%^&*()_+\-=[\]{};':",./<>?|\\]/.test(artistregistrationdata.password);
       const hasDigit = /\d/.test(artistregistrationdata.password);
       const hasConfirm = artistregistrationdata.password === confirm;
 
