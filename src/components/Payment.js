@@ -70,6 +70,7 @@ const Payment = () => {
           setOrder('')
           if(response.status === 200)
           {
+            Razorpay('')
             return;
           }
         }
