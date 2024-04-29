@@ -23,18 +23,18 @@ export default function CustomerNavBar() {
   }, []);
 
   const openCustomerProfile = () => {
-    navigate('/customerprofile')
+    navigate('https://onlineartgallery007.netlify.app/customerprofile')
   }
 
   const handleClick = () => {
-    navigate('/customerhome')
+    navigate('https://onlineartgallery007.netlify.app/customerhome')
     window.location.reload()
   }
 
   const handleLogout = () => {
     localStorage.removeItem('isCustomerLoggedIn');
     localStorage.removeItem('customer');
-    navigate('/customerlogin');
+    navigate('https://onlineartgallery007.netlify.app/customerlogin');
     window.location.reload()
   };
 
@@ -48,8 +48,8 @@ export default function CustomerNavBar() {
               </div>
               <div className="nav-block1">
                   <Link onClick={handleClick}>Home</Link>
-                  <Link to="/favorites">Favorites</Link>
-                  <Link to="/orders">Orders</Link>
+                  <Link to="https://onlineartgallery007.netlify.app/favorites">Favorites</Link>
+                  <Link to="https://onlineartgallery007.netlify.app/orders">Orders</Link>
                   <Link onClick={handleLogout}>Logout</Link>
               </div>
               <div onClick={openCustomerProfile} className="profile" style={{display:"flex",flexDirection:"row",cursor:"pointer"}}>

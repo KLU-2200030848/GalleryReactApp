@@ -23,18 +23,18 @@ export default function ArtistNavBar() {
   }, []);
 
   const openArtistProfile = () => {
-    navigate('/artistprofile')
+    navigate('https://onlineartgallery007.netlify.app/artistprofile')
   }
 
   const handleClick = () => {
-    navigate('/artisthome')
+    navigate('https://onlineartgallery007.netlify.app/artisthome')
     window.location.reload()
   }
 
   const handleLogout = () => {
     localStorage.removeItem('isArtistLoggedIn');
     localStorage.removeItem('artist');
-    navigate('/artistlogin');
+    navigate('https://onlineartgallery007.netlify.app/artistlogin');
     window.location.reload()
   };
 
@@ -48,8 +48,8 @@ export default function ArtistNavBar() {
             </div>
             <div className="nav-block1">
                 <Link onClick={handleClick}>Home</Link>
-                <Link to="/myartwork">My Artwork</Link>
-                <Link to="/publishart">Publish Art</Link>
+                <Link to="https://onlineartgallery007.netlify.app/myartwork">My Artwork</Link>
+                <Link to="https://onlineartgallery007.netlify.app/publishart">Publish Art</Link>
                 <Link onClick={handleLogout}>Logout</Link>
             </div>
             <div onClick={openArtistProfile} className="profile" style={{display:"flex",flexDirection:"row",cursor:"pointer"}}>

@@ -44,7 +44,7 @@ export default function CustomerProfile()
   }
 
   const handleClick = () => {
-    navigate('/customerhome')
+    navigate('https://onlineartgallery007.netlify.app/customerhome')
     window.location.reload()
   }
 

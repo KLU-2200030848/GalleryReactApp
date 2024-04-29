@@ -83,7 +83,7 @@ export default function ArtistRegister() {
           socialmedialinks: '',
           password: ''
         })
-        navigate("/artistlogin")
+        navigate("https://onlineartgallery007.netlify.app/artistlogin")
       }
       setMessage(response.data)
       setError('')
@@ -100,7 +100,7 @@ export default function ArtistRegister() {
   return (
     <div className="background">
         <div className="auth-logo">
-          <Link style={{color:"#D6EDFF"}} to="/register">Back</Link>
+          <Link style={{color:"#D6EDFF"}} to="https://onlineartgallery007.netlify.app/register">Back</Link>
         </div>
         <form className="form" onSubmit={handleSubmit}>
             <div className="form-left">

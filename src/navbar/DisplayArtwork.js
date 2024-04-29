@@ -30,7 +30,7 @@ export default function DisplayArtwork()
             setisartist(Artist)
             const Customer = localStorage.getItem('customer');
             setiscustomer(Customer)
-            isartist ? setback("/artisthome") : iscustomer ? setback("/customerhome") : setback("/explore")
+            isartist ? setback("https://onlineartgallery007.netlify.app/artisthome") : iscustomer ? setback("https://onlineartgallery007.netlify.app/customerhome") : setback("https://onlineartgallery007.netlify.app/explore")
         }, [isartist,iscustomer]);          
         
         const fetchArtist = async () => {
@@ -54,7 +54,7 @@ export default function DisplayArtwork()
         }
 
         const handleBuy = () => {
-            navigate('/processingpayment')
+            navigate('https://onlineartgallery007.netlify.app/processingpayment')
         }
 
         const handleFavourite = async () => {

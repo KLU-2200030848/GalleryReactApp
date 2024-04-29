@@ -29,7 +29,7 @@ export default function CustomerLogin({ onCustomerLogin }) {
       {
         onCustomerLogin();
         localStorage.setItem('customer', JSON.stringify(response.data));
-        navigate("/customerhome");
+        navigate("https://onlineartgallery007.netlify.app/customerhome");
       } 
       else 
       {
@@ -56,16 +56,16 @@ export default function CustomerLogin({ onCustomerLogin }) {
             message ? <h4 style={{margin:"0px 50px"}}>{message}</h4> : <h4>{error}</h4>
           }
           <div className="shift-login">
-            <Link to="/customerlogin">Customer</Link>
-            <Link to="/artistlogin">Artist</Link>
+            <Link to="https://onlineartgallery007.netlify.app/customerlogin">Customer</Link>
+            <Link to="https://onlineartgallery007.netlify.app/artistlogin">Artist</Link>
             <div className="animation start-customer"></div>
           </div>
           <input id="email" value={customerData.email} onChange={handleChange} className="input" type="email" placeholder="Enter Email ID" required/> <br/>
           <input id="password" value={customerData.password} onChange={handleChange} style={{marginBottom:"0px"}} className="input" type="password" placeholder="Enter Password" required/> <br/>
-          <Link style={{marginBottom:"20px"}}  className="forget" to="/forgetpassword">Forget Password?</Link>
+          <Link style={{marginBottom:"20px"}}  className="forget" to="https://onlineartgallery007.netlify.app/forgetpassword">Forget Password?</Link>
           <button type="submit" className="btn">Login</button>
         </form>
-        <p className="new">New User? <Link to="/register">Create account</Link></p>
+        <p className="new">New User? <Link to="https://onlineartgallery007.netlify.app/register">Create account</Link></p>
       </div>
       <div className="right">
         <img className="welimg" src="./loginpageimg.jpg" alt="image_here" /> <br/>

@@ -73,7 +73,7 @@ export default function Favorites()
         <div className="display" style={{maxWidth:"100%"}}>
           {Array.isArray(arts) && arts.length > 0 ? (
             arts.map( (art,index) => (
-              <Link to="/displayartwork" onClick={() => setObject(art.artid)} key={index} className="artwork">
+              <Link to="https://onlineartgallery007.netlify.app/displayartwork" onClick={() => setObject(art.artid)} key={index} className="artwork">
                   <div>
                     <div className='imgtag' style={{justifyContent:"center"}} >
                     <img id='myImage' className={size} src={`${config.url}/artimage/${art.file}`} alt="art_image"/>  

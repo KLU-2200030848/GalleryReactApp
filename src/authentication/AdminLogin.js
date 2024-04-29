@@ -29,7 +29,7 @@ export default function AdminLogin({ onAdminLogin }) {
           {
             onAdminLogin();
             localStorage.setItem('admin', JSON.stringify(response.data));
-            navigate("/adminhome");
+            navigate("https://onlineartgallery007.netlify.app/adminhome");
           } 
           else 
           {

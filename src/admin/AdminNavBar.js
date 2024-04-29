@@ -25,7 +25,7 @@ export default function AdminNavBar()
     const handleLogout = () => {
       localStorage.removeItem('isAdminLoggedIn');
       localStorage.removeItem('admin');
-      navigate('/adminlogin');
+      navigate('https://onlineartgallery007.netlify.app/adminlogin');
       window.location.reload()
     };
 
@@ -37,14 +37,14 @@ export default function AdminNavBar()
                 <span className="logo-name">ART ZONE</span>
             </div>
             <div className="nav-block1">
-                <Link to="/adminhome">Home</Link>
+                <Link to="https://onlineartgallery007.netlify.app/adminhome">Home</Link>
                 <Link onClick={handleLogout}>Logout</Link>
             </div>
             <div className="profile" style={{display:"flex",flexDirection:"row"}}>
                 <span style={{margin:"15px",fontSize:"20px",color:"#00A09A"}} >{adminData.username}</span>
                 <img style={{width:"50px"}} src="./admin.png" alt="profile"/>
                 <div className='profile-content'>
-                <Link to="/changepassword">ChangePassword</Link>
+                <Link to="https://onlineartgallery007.netlify.app/changepassword">ChangePassword</Link>
                 </div>
             </div>
         </nav>

@@ -25,13 +25,13 @@ export default function AdminHome() {
     <div>
       <div className="admin-home">
         <div className="controls">
-          <Link to="/viewcustomers"><h3 className="operations"><img className="icon" src="./customer.png" alt="" />Customer Details</h3></Link>
-          <Link to="/viewartists"><h3 className="operations"><img className="icon" src="./artist.png" alt="" />Artist Details</h3></Link>
-          <Link to="/viewartworks"><h3 className="operations"><img className="icon" src="./artwork.png" alt="" />Artwork Details</h3></Link>
+          <Link to="https://onlineartgallery007.netlify.app/viewcustomers"><h3 className="operations"><img className="icon" src="./customer.png" alt="" />Customer Details</h3></Link>
+          <Link to="https://onlineartgallery007.netlify.app/viewartists"><h3 className="operations"><img className="icon" src="./artist.png" alt="" />Artist Details</h3></Link>
+          <Link to="https://onlineartgallery007.netlify.app/viewartworks"><h3 className="operations"><img className="icon" src="./artwork.png" alt="" />Artwork Details</h3></Link>
           <Link to=""><h3 className="operations"><img className="icon" src="./order.png" alt="" />Order Details</h3></Link>
           <Link to=""><h3 className="operations"><img className="icon" src="./transaction.png" alt="" />Transaction Details</h3></Link>
-          <Link to="/viewqueries"><h3 className="operations"><img className="icon" src="./queries.png" alt="" />User Queries</h3></Link>
-          <Link to="/viewfeedbacks"><h3 className="operations"><img className="icon" src="./feedback.png" alt="" />Feedback</h3></Link>
+          <Link to="https://onlineartgallery007.netlify.app/viewqueries"><h3 className="operations"><img className="icon" src="./queries.png" alt="" />User Queries</h3></Link>
+          <Link to="https://onlineartgallery007.netlify.app/viewfeedbacks"><h3 className="operations"><img className="icon" src="./feedback.png" alt="" />Feedback</h3></Link>
         </div>
         <div className="statistics">
             <div className="stats">
