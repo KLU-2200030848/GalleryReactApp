@@ -60,12 +60,12 @@ export default function CustomerNavBar() {
         </ShowNavBar>
 
         <Routes>
-            <Route path="/customerhome" element={<CustomerHome/>} exact/>
-            <Route path="/favorites" element={<Favorites/>} exact/>
-            <Route path="/orders" element={<Orders/>} exact/>
-            <Route path="/displayartwork" element={<DisplayArtwork/>} exact/>
-            <Route path="/customerprofile" element={<CustomerProfile/>} exact/>
-            <Route path="/processingpayment" element={<Payment/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/customerhome" element={<CustomerHome/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/favorites" element={<Favorites/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/orders" element={<Orders/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/displayartwork" element={<DisplayArtwork/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/customerprofile" element={<CustomerProfile/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/processingpayment" element={<Payment/>} exact/>
         </Routes>
     </div>
   )

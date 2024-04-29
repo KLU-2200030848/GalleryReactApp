@@ -60,11 +60,11 @@ export default function ArtistNavBar() {
         </ShowNavBar>
 
         <Routes>
-            <Route path="/artisthome" element={<ArtistHome/>} exact/>
-            <Route path="/myartwork" element={<MyArtworks/>} exact/>
-            <Route path="/publishart" element={<PublishArt/>} exact/>
-            <Route path="/displayartwork" element={<DisplayArtwork/>} exact/>
-            <Route path="/artistprofile" element={<ArtistProfile/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/artisthome" element={<ArtistHome/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/myartwork" element={<MyArtworks/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/publishart" element={<PublishArt/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/displayartwork" element={<DisplayArtwork/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/artistprofile" element={<ArtistProfile/>} exact/>
         </Routes>
     </div>
   )

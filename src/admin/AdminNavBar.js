@@ -50,13 +50,13 @@ export default function AdminNavBar()
         </nav>
 
         <Routes>
-            <Route path="/adminhome" element={<AdminHome/>} exact/>
-            <Route path="/viewcustomers" element={<CustomerDetails/>} exact/> 
-            <Route path="/viewartists" element={<ArtistDetails/>} exact/> 
-            <Route path="/viewartworks" element={<ArtworkDetails/>} exact/>
-            <Route path="/viewqueries" element={<QueryDetails/>} exact/>             
-            <Route path="/viewfeedbacks" element={<FeedbackDetails/>} exact/> 
-            <Route path="/changepassword" element={<ChangePassword/>} exact/> 
+            <Route path="https://onlineartgallery007.netlify.app/adminhome" element={<AdminHome/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/viewcustomers" element={<CustomerDetails/>} exact/> 
+            <Route path="https://onlineartgallery007.netlify.app/viewartists" element={<ArtistDetails/>} exact/> 
+            <Route path="https://onlineartgallery007.netlify.app/viewartworks" element={<ArtworkDetails/>} exact/>
+            <Route path="https://onlineartgallery007.netlify.app/viewqueries" element={<QueryDetails/>} exact/>             
+            <Route path="https://onlineartgallery007.netlify.app/viewfeedbacks" element={<FeedbackDetails/>} exact/> 
+            <Route path="https://onlineartgallery007.netlify.app/changepassword" element={<ChangePassword/>} exact/> 
         </Routes>
     </div>
   )
