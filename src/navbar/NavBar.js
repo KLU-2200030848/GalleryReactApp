@@ -27,17 +27,17 @@ export default function NavBar({ onAdminLogin, onArtistLogin, onCustomerLogin })
                 <span className="logo-name">ART ZONE</span>
             </div>
             <div className="nav-block1">
-                <Link to="https://onlineartgallery007.netlify.app">Home</Link>
-                <Link to="https://onlineartgallery007.netlify.app/explore">Explore</Link>
-                <Link to="https://onlineartgallery007.netlify.app/about">About</Link>
-                <Link to="https://onlineartgallery007.netlify.app/contact">Contact</Link>
+                <Link to="/">Home</Link>
+                <Link to="/explore">Explore</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
             </div>
             <div className="nav-button">
                 <div className="login-button">
-                    <Link to="https://onlineartgallery007.netlify.app/customerlogin">Login</Link>
+                    <Link to="/customerlogin">Login</Link>
                 </div>
                 <div className="register-button">
-                    <Link to="https://onlineartgallery007.netlify.app/register">Register</Link>
+                    <Link to="/register">Register</Link>
                 </div>
             </div>
         </nav>

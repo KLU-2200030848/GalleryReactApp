@@ -61,7 +61,7 @@ export default function PublishArt() {
             file: null
         });
         fileInputRef.current.value= '';
-        navigate("https://onlineartgallery007.netlify.app/myartwork")
+        navigate("/myartwork")
       }
       setMessage(response.data);
       setError(''); 
@@ -74,7 +74,7 @@ export default function PublishArt() {
   };
 
   const handleBack = () => {
-    navigate('https://onlineartgallery007.netlify.app/artisthome')
+    navigate('/artisthome')
     window.location.reload()
   }
 

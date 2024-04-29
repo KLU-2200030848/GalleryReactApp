@@ -9,18 +9,18 @@ export default function ShowNavBar({children})
     const [showNavBar, setShowNavBar] = useState('')
 
     useEffect(() => {
-      if(location.pathname === 'https://onlineartgallery007.netlify.app/customerlogin' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/register' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/forgetpassword' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/artistregister' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/artistlogin' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/adminlogin' || 
-      location.pathname === 'https://onlineartgallery007.netlify.app/adminhome' ||
-      location.pathname === 'https://onlineartgallery007.netlify.app/publishart' ||
-      location.pathname === 'https://onlineartgallery007.netlify.app/displayartwork'||
-      location.pathname === 'https://onlineartgallery007.netlify.app/customerprofile' ||
-      location.pathname === 'https://onlineartgallery007.netlify.app/artistprofile' ||
-      location.pathname === 'https://onlineartgallery007.netlify.app/processingpayment') 
+      if(location.pathname === '/customerlogin' || 
+      location.pathname === '/register' || 
+      location.pathname === '/forgetpassword' || 
+      location.pathname === '/artistregister' || 
+      location.pathname === '/artistlogin' || 
+      location.pathname === '/adminlogin' || 
+      location.pathname === '/adminhome' ||
+      location.pathname === '/publishart' ||
+      location.pathname === '/displayartwork'||
+      location.pathname === '/customerprofile' ||
+      location.pathname === '/artistprofile' ||
+      location.pathname === '/processingpayment') 
       {
         setShowNavBar(false)
       }    

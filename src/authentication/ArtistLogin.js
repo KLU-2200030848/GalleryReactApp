@@ -29,7 +29,7 @@ export default function ArtistLogin({ onArtistLogin }) {
       {
         onArtistLogin()
         localStorage.setItem('artist', JSON.stringify(response.data));
-        navigate("https://onlineartgallery007.netlify.app/artisthome");
+        navigate("/artisthome");
       } 
       else 
       {
@@ -48,7 +48,7 @@ export default function ArtistLogin({ onArtistLogin }) {
     <div className="auth-page">
       <div className="left">
         <div className="auth-logo">
-        <Link to="https://onlineartgallery007.netlify.app"><img src="./logo.png" alt="logo"></img></Link>
+        <Link to="/"><img src="./logo.png" alt="logo"></img></Link>
         </div>
         <form align="center" className="login-form" onSubmit={handleSubmit}>
           <p className="heading">Artist Login</p> <br/>
@@ -56,16 +56,16 @@ export default function ArtistLogin({ onArtistLogin }) {
             message ? <h4 style={{margin:"0px 80px"}}>{message}</h4> : <h4 style={{margin:"0px 0px"}}>{error}</h4>
           }
           <div className="shift-login">
-            <Link to="https://onlineartgallery007.netlify.app/customerlogin">Customer</Link>
-            <Link to="https://onlineartgallery007.netlify.app/artistlogin">Artist</Link>
+            <Link to="/customerlogin">Customer</Link>
+            <Link to="/artistlogin">Artist</Link>
             <div className="animation start-artist"></div>
           </div>
           <input id="email" value={artistData.email} onChange={handleChange} className="input" type="email" placeholder="Enter Email ID" required/> <br/>
           <input id="password" value={artistData.password}  onChange={handleChange} style={{marginBottom:"0px"}} className="input" type="password" placeholder="Enter Password" required/> <br/>
-          <Link style={{marginBottom:"20px"}} className="forget" to="https://onlineartgallery007.netlify.app/forgetpassword">Forget Password?</Link>
+          <Link style={{marginBottom:"20px"}} className="forget" to="/forgetpassword">Forget Password?</Link>
           <button type="submit" className="btn">Login</button>
         </form>
-        <p className="new">New User? <Link to="https://onlineartgallery007.netlify.app/artistregister">Create account</Link></p>
+        <p className="new">New User? <Link to="/artistregister">Create account</Link></p>
       </div>
       <div className="right">
         <img className="welimg" src="./loginpageimg.jpg" alt="image_here" /> <br/>

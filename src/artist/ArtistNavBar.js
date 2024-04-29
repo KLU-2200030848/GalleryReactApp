@@ -23,18 +23,18 @@ export default function ArtistNavBar() {
   }, []);
 
   const openArtistProfile = () => {
-    navigate('https://onlineartgallery007.netlify.app/artistprofile')
+    navigate('/artistprofile')
   }
 
   const handleClick = () => {
-    navigate('https://onlineartgallery007.netlify.app/artisthome')
+    navigate('/artisthome')
     window.location.reload()
   }
 
   const handleLogout = () => {
     localStorage.removeItem('isArtistLoggedIn');
     localStorage.removeItem('artist');
-    navigate('https://onlineartgallery007.netlify.app/artistlogin');
+    navigate('/artistlogin');
     window.location.reload()
   };
 
@@ -48,8 +48,8 @@ export default function ArtistNavBar() {
             </div>
             <div className="nav-block1">
                 <Link onClick={handleClick}>Home</Link>
-                <Link to="https://onlineartgallery007.netlify.app/myartwork">My Artwork</Link>
-                <Link to="https://onlineartgallery007.netlify.app/publishart">Publish Art</Link>
+                <Link to="/myartwork">My Artwork</Link>
+                <Link to="/publishart">Publish Art</Link>
                 <Link onClick={handleLogout}>Logout</Link>
             </div>
             <div onClick={openArtistProfile} className="profile" style={{display:"flex",flexDirection:"row",cursor:"pointer"}}>
@@ -60,11 +60,11 @@ export default function ArtistNavBar() {
         </ShowNavBar>
 
         <Routes>
-            <Route path="https://onlineartgallery007.netlify.app/artisthome" element={<ArtistHome/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/myartwork" element={<MyArtworks/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/publishart" element={<PublishArt/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/displayartwork" element={<DisplayArtwork/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/artistprofile" element={<ArtistProfile/>} exact/>
+            <Route path="/artisthome" element={<ArtistHome/>} exact/>
+            <Route path="/myartwork" element={<MyArtworks/>} exact/>
+            <Route path="/publishart" element={<PublishArt/>} exact/>
+            <Route path="/displayartwork" element={<DisplayArtwork/>} exact/>
+            <Route path="/artistprofile" element={<ArtistProfile/>} exact/>
         </Routes>
     </div>
   )

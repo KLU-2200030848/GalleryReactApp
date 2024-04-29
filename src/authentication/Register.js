@@ -79,7 +79,7 @@ export default function Register()
           contact: '',
           password: ''
         });
-        navigate("https://onlineartgallery007.netlify.app/customerlogin")
+        navigate("/customerlogin")
       }
       setMessage(response.data);
       setError(''); 
@@ -96,7 +96,7 @@ export default function Register()
     <div className="auth-page">
       <div className="right">
         <div className="auth-logo">
-          <Link to="https://onlineartgallery007.netlify.app"><img src="./logo2.png" alt="logo"></img></Link>
+          <Link to="/"><img src="./logo2.png" alt="logo"></img></Link>
         </div>
         <img className='welimg' src="registerimg.png" alt="image_here"></img> <br/>
         <p className="welcome">Register & Join</p>
@@ -131,7 +131,7 @@ export default function Register()
             <input className="input" type="password" placeholder="Confirm Password" id="confirm" value={confirm} onChange={handleConfirm} required/>
             <button  className="btn" type='submit' >Register</button>
           </form>
-          <p className="new">Want to Publish art? <Link to="https://onlineartgallery007.netlify.app/artistregister">Register as Artist</Link></p>
+          <p className="new">Want to Publish art? <Link to="/artistregister">Register as Artist</Link></p>
       </div>
     </div>
   )

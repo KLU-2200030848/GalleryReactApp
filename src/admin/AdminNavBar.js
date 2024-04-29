@@ -25,7 +25,7 @@ export default function AdminNavBar()
     const handleLogout = () => {
       localStorage.removeItem('isAdminLoggedIn');
       localStorage.removeItem('admin');
-      navigate('https://onlineartgallery007.netlify.app/adminlogin');
+      navigate('/adminlogin');
       window.location.reload()
     };
 
@@ -37,26 +37,26 @@ export default function AdminNavBar()
                 <span className="logo-name">ART ZONE</span>
             </div>
             <div className="nav-block1">
-                <Link to="https://onlineartgallery007.netlify.app/adminhome">Home</Link>
+                <Link to="/adminhome">Home</Link>
                 <Link onClick={handleLogout}>Logout</Link>
             </div>
             <div className="profile" style={{display:"flex",flexDirection:"row"}}>
                 <span style={{margin:"15px",fontSize:"20px",color:"#00A09A"}} >{adminData.username}</span>
                 <img style={{width:"50px"}} src="./admin.png" alt="profile"/>
                 <div className='profile-content'>
-                <Link to="https://onlineartgallery007.netlify.app/changepassword">ChangePassword</Link>
+                <Link to="/changepassword">ChangePassword</Link>
                 </div>
             </div>
         </nav>
 
         <Routes>
-            <Route path="https://onlineartgallery007.netlify.app/adminhome" element={<AdminHome/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/viewcustomers" element={<CustomerDetails/>} exact/> 
-            <Route path="https://onlineartgallery007.netlify.app/viewartists" element={<ArtistDetails/>} exact/> 
-            <Route path="https://onlineartgallery007.netlify.app/viewartworks" element={<ArtworkDetails/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/viewqueries" element={<QueryDetails/>} exact/>             
-            <Route path="https://onlineartgallery007.netlify.app/viewfeedbacks" element={<FeedbackDetails/>} exact/> 
-            <Route path="https://onlineartgallery007.netlify.app/changepassword" element={<ChangePassword/>} exact/> 
+            <Route path="/adminhome" element={<AdminHome/>} exact/>
+            <Route path="/viewcustomers" element={<CustomerDetails/>} exact/> 
+            <Route path="/viewartists" element={<ArtistDetails/>} exact/> 
+            <Route path="/viewartworks" element={<ArtworkDetails/>} exact/>
+            <Route path="/viewqueries" element={<QueryDetails/>} exact/>             
+            <Route path="/viewfeedbacks" element={<FeedbackDetails/>} exact/> 
+            <Route path="/changepassword" element={<ChangePassword/>} exact/> 
         </Routes>
     </div>
   )

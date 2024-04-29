@@ -23,18 +23,18 @@ export default function CustomerNavBar() {
   }, []);
 
   const openCustomerProfile = () => {
-    navigate('https://onlineartgallery007.netlify.app/customerprofile')
+    navigate('/customerprofile')
   }
 
   const handleClick = () => {
-    navigate('https://onlineartgallery007.netlify.app/customerhome')
+    navigate('/customerhome')
     window.location.reload()
   }
 
   const handleLogout = () => {
     localStorage.removeItem('isCustomerLoggedIn');
     localStorage.removeItem('customer');
-    navigate('https://onlineartgallery007.netlify.app/customerlogin');
+    navigate('/customerlogin');
     window.location.reload()
   };
 
@@ -48,8 +48,8 @@ export default function CustomerNavBar() {
               </div>
               <div className="nav-block1">
                   <Link onClick={handleClick}>Home</Link>
-                  <Link to="https://onlineartgallery007.netlify.app/favorites">Favorites</Link>
-                  <Link to="https://onlineartgallery007.netlify.app/orders">Orders</Link>
+                  <Link to="/favorites">Favorites</Link>
+                  <Link to="/orders">Orders</Link>
                   <Link onClick={handleLogout}>Logout</Link>
               </div>
               <div onClick={openCustomerProfile} className="profile" style={{display:"flex",flexDirection:"row",cursor:"pointer"}}>
@@ -60,12 +60,12 @@ export default function CustomerNavBar() {
         </ShowNavBar>
 
         <Routes>
-            <Route path="https://onlineartgallery007.netlify.app/customerhome" element={<CustomerHome/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/favorites" element={<Favorites/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/orders" element={<Orders/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/displayartwork" element={<DisplayArtwork/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/customerprofile" element={<CustomerProfile/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/processingpayment" element={<Payment/>} exact/>
+            <Route path="/customerhome" element={<CustomerHome/>} exact/>
+            <Route path="/favorites" element={<Favorites/>} exact/>
+            <Route path="/orders" element={<Orders/>} exact/>
+            <Route path="/displayartwork" element={<DisplayArtwork/>} exact/>
+            <Route path="/customerprofile" element={<CustomerProfile/>} exact/>
+            <Route path="/processingpayment" element={<Payment/>} exact/>
         </Routes>
     </div>
   )

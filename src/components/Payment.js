@@ -81,7 +81,7 @@ const Payment = () => {
     }
     
     const handlecancel = () => {
-        navigate('https://onlineartgallery007.netlify.app/displayartwork')
+        navigate('/displayartwork')
     }
 
     return (

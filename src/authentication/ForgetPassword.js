@@ -43,7 +43,7 @@ export default function ForgetPassword() {
     <div className="auth-page">
         <div className="left">
             <div className="auth-logo">
-            <Link to="https://onlineartgallery007.netlify.app/customerlogin">Back</Link>
+            <Link to="/customerlogin">Back</Link>
             </div>
             <form align="center" className="forget-form">
                 <p className="heading">Change Password</p>
