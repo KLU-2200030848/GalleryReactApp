@@ -57,7 +57,7 @@ export default function ArtistProfile()
                     <span onClick={onFeedback} className='links'>Feedback</span>
                 </div>
                 <div>
-                    <Link to="https://onlineartgallery007.netlify.app/artisthome" className="back" style={{textDecoration:"none",marginLeft:"20px"}}>
+                    <Link to="/artisthome" className="back" style={{textDecoration:"none",marginLeft:"20px"}}>
                         <img style={{width:"25px"}} src="./backarrow.png" alt="back" />
                         <span style={{color:"#00A09A",textAlign:"center"}}>&nbsp;Back to home</span>
                     </Link>

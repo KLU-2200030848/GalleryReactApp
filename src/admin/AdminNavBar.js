@@ -25,7 +25,7 @@ export default function AdminNavBar()
     const handleLogout = () => {
       localStorage.removeItem('isAdminLoggedIn');
       localStorage.removeItem('admin');
-      navigate('https://onlineartgallery007.netlify.app/adminlogin');
+      navigate('/adminlogin');
       window.location.reload()
     };
 

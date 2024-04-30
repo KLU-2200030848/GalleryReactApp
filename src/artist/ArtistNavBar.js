@@ -34,7 +34,7 @@ export default function ArtistNavBar() {
   const handleLogout = () => {
     localStorage.removeItem('isArtistLoggedIn');
     localStorage.removeItem('artist');
-    navigate('https://onlineartgallery007.netlify.app/artistlogin');
+    navigate('/artistlogin');
     window.location.reload()
   };
 
