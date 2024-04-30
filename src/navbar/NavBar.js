@@ -44,18 +44,18 @@ export default function NavBar({ onAdminLogin, onArtistLogin, onCustomerLogin })
         </ShowNavBar>
 
         <Routes>
-            <Route path="https://onlineartgallery007.netlify.app" element={<Home/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/explore" element={<Explore/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/about" element={<About/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/contact" element={<Contact/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/displayartwork" element={<DisplayArtwork/>} exact/>
+            <Route path="/" element={<Home/>} exact/>
+            <Route path="/explore" element={<Explore/>} exact/>
+            <Route path="/about" element={<About/>} exact/>
+            <Route path="/contact" element={<Contact/>} exact/>
+            <Route path="/displayartwork" element={<DisplayArtwork/>} exact/>
 
-            <Route path="https://onlineartgallery007.netlify.app/customerlogin" element={<CustomerLogin onCustomerLogin={onCustomerLogin}/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/artistlogin" element={<ArtistLogin onArtistLogin={onArtistLogin}/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/adminlogin" element={<AdminLogin onAdminLogin={onAdminLogin}/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/forgetpassword" element={<ForgetPassword/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/register" element={<Register/>} exact/>
-            <Route path="https://onlineartgallery007.netlify.app/artistregister" element={<ArtistRegister/>} exact/>
+            <Route path="/customerlogin" element={<CustomerLogin onCustomerLogin={onCustomerLogin}/>} exact/>
+            <Route path="/artistlogin" element={<ArtistLogin onArtistLogin={onArtistLogin}/>} exact/>
+            <Route path="/adminlogin" element={<AdminLogin onAdminLogin={onAdminLogin}/>} exact/>
+            <Route path="/forgetpassword" element={<ForgetPassword/>} exact/>
+            <Route path="/register" element={<Register/>} exact/>
+            <Route path="/artistregister" element={<ArtistRegister/>} exact/>
         </Routes>
 
     </div>

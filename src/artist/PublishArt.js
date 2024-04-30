@@ -74,7 +74,7 @@ export default function PublishArt() {
   };
 
   const handleBack = () => {
-    navigate('/artisthome')
+    navigate('https://onlineartgallery007.netlify.app/artisthome')
     window.location.reload()
   }
 
